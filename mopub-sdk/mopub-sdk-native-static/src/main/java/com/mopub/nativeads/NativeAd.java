@@ -213,6 +213,8 @@ public class NativeAd {
 
         mBaseNativeAd.destroy();
         mIsDestroyed = true;
+
+        mMoPubNativeEventListener = null;
     }
 
     // Event Handlers

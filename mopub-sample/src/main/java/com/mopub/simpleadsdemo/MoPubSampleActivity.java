@@ -150,7 +150,7 @@ public class MoPubSampleActivity extends AppCompatActivity
 
         // Intercepts all logs including Level.FINEST so we can show a toast
         // that is not normally user-facing. This is only used for native ads.
-        LoggingUtils.enableCanaryLogging(this);
+        LoggingUtils.enableCanaryLogging(getApplicationContext());
 
 
         mImpressionListener = createImpressionsListener();

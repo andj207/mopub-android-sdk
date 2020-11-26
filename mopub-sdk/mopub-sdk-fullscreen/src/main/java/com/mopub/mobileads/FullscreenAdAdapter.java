@@ -85,6 +85,8 @@ public class FullscreenAdAdapter extends AdAdapter {
         final WebViewCacheService.Config config =
                 WebViewCacheService.popWebViewConfig(mBroadcastIdentifier);
         if (config != null) {
+            config.getWeakBaseAd().clear();
+            config.getController().destroy();
             config.getWebView().destroy();
         }
     }
