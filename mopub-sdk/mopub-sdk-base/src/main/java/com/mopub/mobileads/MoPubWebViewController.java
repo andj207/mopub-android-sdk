@@ -135,6 +135,8 @@ public abstract class MoPubWebViewController {
         if (!mIsPaused) {
             pause(true);
         }
+        mBaseWebViewListener = null;
+        mDebugListener = null;
     }
 
     @NonNull
