@@ -529,6 +529,8 @@ public class MraidController extends MoPubWebViewController {
         detachMraidWebView();
         detachTwoPartWebView();
         unApplyOrientation();
+
+        mOnCloseButtonListener = null;
     }
 
     private void detachMraidWebView() {
